@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="sea otter, kid, stuff" name="keywords" />
+    <meta content="Sometimes, sea otters are awesome!" name="description" />
+    <title>Dom_1</title>
+    <style>
+      body {
+        font-family: "Arial";
+        background-color: #cccfff;
+      }
+      #container {
+        margin-left: 20%;
+      }
+      #container img {
+        padding: 20px;
+      }
+      #container h1 {
+        font-size: 56px;
+        font-weight: 500;
+      }
+      #container p.bodyText {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .submitButton {
+        display: inline-block;
+        border: 5px solid #669900;
+        background-color: #7bb700;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="seaOtter.png" class="imgSea" />
+      <h1>What This Sea Otter Did to This Little Kid Will Make You LOL!</h1>
+      <p class="bodyText">
+        Nulla tristique, justo eget semper viverra, massa arcu congue tortor, ut
+        vehicula urna mi in lorem. Quisque aliquam molestie dui, at tempor
+        turpis porttitor nec. Aenean id interdum urna. Curabitur mi ligula,
+        hendrerit at semper sed, feugiat a nisi.
+      </p>
+      <p></p>
+      <div class="submitButton">
+        more
+      </div>
+    </div>
+    <script>
+      var images = document.querySelectorAll("#imgSea");
+      /* 
+    If you want to target all images without having to specify class value
+    var images = document.querySelectorAll("img");
+
+    If you want to targer specific image then use
+    var images = document.querySelectorAll("img[src='meh.png']");
+    */
+
+      for (var i = 0; i < images.length; i++) {
+        var image = images[i];
+        console.log(image.getAttribute("src"));
+      }
+    </script>
+  </body>
+</html>
