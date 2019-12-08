@@ -1,0 +1,28 @@
+<!-- 
+    appendChild add content to end of the child node
+    If i want to insert before any specific tag you can do so by using insertBefore
+    insertBefore takes two parameters, one is the element you want to insert, 2nd is reference to sibling
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM traversing</title>
+</head>
+<body>
+    <h1>Hello HTML!</h1>
+</body>
+<script>
+    var newElement = document.createElement("p");
+    newElement.textContent = "I'm entirely created based on imagination";
+    document.body.appendChild(newElement);
+    var h2Element = document.createElement("h2");
+    h2Element.textContent = "What's happening?How am i here!";
+    document.body.appendChild(h2Element);
+    // var targetElement = document.querySelector("h1");
+    // document.body.insertBefore(newElement, targetElement);
+    // document.body.removeChild(newElement);
+</script>
+</html>
